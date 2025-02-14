@@ -1,0 +1,19 @@
+# Run format check
+echo "Checking formatting..."
+
+
+# Check if there are unstaged changes after formatting
+if ! npm run format:check --silent; then
+  echo "❌ You need to run 'npm run format' before committing."
+  echo "ℹ️ Run 'npm run format', then stage the changes with 'git add .'"
+  exit 1
+fi
+
+# Run build check
+echo "Checking build..."
+if ! npm run build --silent; then
+  echo "❌ Build failed! Please fix the issues before committing."
+  exit 1
+fi
+
+echo "✅ All checks passed. Proceeding with commit."

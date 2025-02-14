@@ -1,10 +1,16 @@
+import Navbar from "@/components/Navbar/navbar";
+import React from "react";
+import Header from "@/components/Header/header";
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
     <div>
-      <div className="home page">
-        <div>Nav</div>
-		  </div>
+      <div className="max-h-[100vh] w-full">
+        <Navbar />
+        <Header />
+      </div>
     </div>
   );
-}
+};
+
+export default HomePage;

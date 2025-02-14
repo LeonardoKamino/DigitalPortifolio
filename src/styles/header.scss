@@ -1,0 +1,29 @@
+@import "FluidType";
+
+.header {
+  display: flex;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+
+  .background-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+
+  .viewport-header {
+    position: relative;
+    z-index: 2;
+
+    .content {
+      color: #e1f2f7;
+    }
+  }
+}
