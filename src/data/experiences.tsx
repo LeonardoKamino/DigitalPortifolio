@@ -140,7 +140,7 @@ const experiences = [
       </ul>
     ),
     skills: ["TypeScript", "React", "Bulma"],
-    logo: "/media/LaunchPadLogo.png",
+    logo: "/media/LaunchpadLogo.png",
   },
 ];
 

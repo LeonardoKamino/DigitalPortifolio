@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Circle, CircleDot, CircleSlash } from "lucide-react";
+import { CircleX, CircleMinus, Maximize2 } from "lucide-react";
 
 interface Project {
   id: string;
@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="w-full lg:w-1/3 p-4">
       <Card
-        className="bg-zinc-200 dark:bg-zinc-700 shadow-lg cursor-pointer hover:shadow-xl transition-all"
+        className="bg-zinc-200 dark:bg-zinc-700 shadow-lg cursor-pointer hover:shadow-xl transition-all h-full"
         onClick={handleCardClick}
         role="button"
         tabIndex={0}
@@ -45,15 +45,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         <CardHeader className="dark:bg-[#212933] flex items-center p-3">
           <div className="flex items-center space-x-2">
-            <Circle className="text-red-500 w-4 h-4" />
-            <CircleDot className="text-yellow-500 w-4 h-4" />
-            <CircleSlash className="text-green-500 w-4 h-4" />
+            <CircleX className="text-red-500 w-4 h-4" />
+            <CircleMinus className="text-yellow-500 w-4 h-4" />
+            <Maximize2 className="text-green-700 border-2 border-green-700 w-4 h-4 text-green-700 rounded-full p-[1px]" />
           </div>
           <h3 className="ml-4 font-semibold text-lg xl:text-sm bg-zinc-200 dark:text-black w-[100%] rounded-md px-4 overflow-hidden text-ellipsis whitespace-nowrap">
             {project.title}
           </h3>
         </CardHeader>
-        <div className="relative group h-full">
+        <div className="relative group">
           <Image
             src={project.image}
             alt={project.title}
