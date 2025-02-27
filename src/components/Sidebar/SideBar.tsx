@@ -2,35 +2,44 @@
 
 import { PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import Link from "next/link";
-import SideBarItem from "./SideBarItem";
-import { useState } from "react";
-import { ModeToggle } from "./ModeTogle";
+
+import ModeToggle from "../ui/mode-toggle";
+import SideBarItem from "./sideBarItem";
 
 interface SideBarProps {
   links: { title: string; href: string; icon: React.ComponentType }[];
+  className?: string;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
-export default function SideBar({ links }: SideBarProps) {
-  const [isOpen, setIsOpen] = useState(true);
-
+export default function SideBar({
+  links,
+  className,
+  isOpen,
+  setIsOpen,
+}: SideBarProps) {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div
-      className={`relative transition-all duration-300 ${
-        isOpen ? "w-72" : "w-16"
-      } border-r`}
+      className={
+        `relative transition-all duration-300 ${
+          isOpen ? "w-[200px]" : "w-16"
+        } border-r h-full` + ` ${className}`
+      }
     >
-      {/* Sidebar Content */}
       <div className="flex h-full max-h-screen flex-col gap-2">
         <div className="flex h-[80px] items-center justify-between border-b px-1 w-full">
           {isOpen && (
             <Link
-              className={`flex items-center gap-2 font-semibold ml-1 `}
+              className={`flex items-center gap-2 font-semibold ml-1`}
               href="/"
-            ></Link>
+            >
+              {/* Add logo or brand name here if needed */}
+            </Link>
           )}
           <PanelLeftClose
             className={`cursor-pointer ${isOpen ? "block" : "hidden"}`}
