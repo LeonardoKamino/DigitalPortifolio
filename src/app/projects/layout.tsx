@@ -1,5 +1,6 @@
 import React from "react";
-import DashboardLayout from "@/components/Dashboard/Dashboard";
+import DashboardLayout from "@/components/dashboard/dashboard";
+
 export default function ProjectsLayout({
   children,
 }: Readonly<{
@@ -10,7 +11,7 @@ export default function ProjectsLayout({
       {/* Sidebar */}
 
       <DashboardLayout>
-        <div className="flex-1 m-10">{children}</div>
+        <div className="flex-1">{children}</div>
       </DashboardLayout>
 
       {/* Toaster */}

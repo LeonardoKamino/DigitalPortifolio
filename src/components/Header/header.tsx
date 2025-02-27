@@ -14,10 +14,12 @@ const Header: React.FunctionComponent = () => {
       </video>
 
       {/* Centered Content */}
-      <header className="viewport-header">
-        <div className="my-32 md:my-64 mx-8">
-          <h1 className="mb-12 text-5xl md:text-8xl">Hey, I`&apos;`m Leo</h1>
-          <div className="mb-12 text-xl md:text-3xl">
+      <header className="viewport-header text-white">
+        <div className="my-32  xlg:my-64 mx-8">
+          <h1 className="mb-12 text-5xl md:text-7xl xlg:text-8xl">
+            Hey, I&apos;m Leo
+          </h1>
+          <div className="mb-12 text-xl md:text-2xl xlg:text-3xl">
             <p className="mb-2">
               Computer Engineering student @ UBC, Vancouver.
             </p>
@@ -26,7 +28,7 @@ const Header: React.FunctionComponent = () => {
 
           {/* Download Button */}
           <a href={resumePdfPath} download="LeoKamino_Resume.pdf">
-            <Button className="link-button md:text-xl">
+            <Button className="link-button py-6 md:text-xl">
               Download my resume
             </Button>
           </a>

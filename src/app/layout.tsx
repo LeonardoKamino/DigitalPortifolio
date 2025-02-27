@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EARS",
-  description: "Emergency AI Response System",
+  title: "Leo Kamino",
+  description: "Personal digital portifolio",
 };
 
 export default function RootLayout({
