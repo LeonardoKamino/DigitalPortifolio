@@ -6,15 +6,64 @@
   align-items: center; // Center vertically
   position: relative;
   overflow: hidden;
+  background: linear-gradient(-45deg, #252525, #080808, #252525);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
 
-  .background-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100%;
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  // Regular star styles
+  .star {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  // Shooting star styles
+  .shooting-star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: shoot 2s linear infinite;
+    transform: rotate(var(--angle)); // Apply random rotation
+  }
+
+  @keyframes shoot {
+    0% {
+      transform: rotate(var(--angle)) translateX(0) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--angle)) translateX(400px) translateY(400px);
+      opacity: 0;
+    }
   }
 
   .viewport-header {
@@ -24,5 +73,18 @@
     .content {
       color: #e1f2f7;
     }
+  }
+}
+
+// Light theme
+.light .header {
+  background: linear-gradient(-45deg, #ddd, #fff, #ddd);
+
+  .star {
+    background: #333; // Darker stars for light theme
+  }
+
+  .shooting-star {
+    background: #333;
   }
 }
