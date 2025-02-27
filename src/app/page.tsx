@@ -3,6 +3,7 @@ import React from "react";
 import Header from "@/components/header/header";
 import ProjectsSpotlights from "@/components/projects-spotlight/projects-spotlight";
 import ExperienceTimeline from "@/components/experience-timeline/experience-timeline";
+import Footer from "@/components/footer/footer";
 
 const HomePage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
           <ProjectsSpotlights />
           <ExperienceTimeline />
         </div>
+        <Footer />
       </div>
     </div>
   );
