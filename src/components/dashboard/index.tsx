@@ -1,8 +1,8 @@
 "use client";
 
-import SideBar from "@/components/sidebar";
+import SideBar from "./sidebar";
 import { FileAudio, HomeIcon } from "lucide-react";
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar";
 import { useState } from "react";
 
 export default function DashboardLayout({

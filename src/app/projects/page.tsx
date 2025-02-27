@@ -1,5 +1,5 @@
 "use client";
-import ProjectCard from "@/components/project-card/project-card";
+import ProjectCard from "@/components/project-card";
 
 import Projects from "@/data/ProjectsList";
 

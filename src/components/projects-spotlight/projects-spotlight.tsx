@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button"; // shadcn/ui button
-import ProjectCard from "@/components/project-card/project-card";
+import ProjectCard from "@/components/project-card";
 import Projects from "@/data/ProjectsList";
 
 export default function ProjectsSpotlights() {

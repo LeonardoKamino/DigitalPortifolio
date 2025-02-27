@@ -3,7 +3,7 @@
 import { PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import Link from "next/link";
 
-import ModeToggle from "../ui/mode-toggle";
+import ModeToggle from "../../ui/mode-toggle";
 import SideBarItem from "./sideBarItem";
 
 interface SideBarProps {
