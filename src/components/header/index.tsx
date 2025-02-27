@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import "../../styles/header.scss";
+import SocialIconRow from "../social-icon-row";
 
 const Header: React.FunctionComponent = () => {
   // Path to your resume PDF file
@@ -67,11 +68,11 @@ const Header: React.FunctionComponent = () => {
               Computer Engineering @ UBC
             </p>
           </div>
-
+          <SocialIconRow />
           {/* Download Button */}
           <a href={resumePdfPath} download="LeoKamino_Resume.pdf">
-            <Button className="link-button py-6 md:text-xl">
-              Download my resume
+            <Button className="link-button my-6 md:text-xl">
+              Download my Resume
             </Button>
           </a>
         </div>

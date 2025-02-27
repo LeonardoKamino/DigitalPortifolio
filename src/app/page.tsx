@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
       <div className="max-h-[100vh] w-full">
         <Navbar />
         <Header />
-        <div className="m-auto max-w-[1720px]">
+        <div className="m-auto max-w-[1200px] xl:max-w-[1720px]">
           <ProjectsSpotlights />
           <ExperienceTimeline />
         </div>

@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SocialIconRow from "../social-icon-row";
 
 export default function Footer() {
   return (
@@ -9,30 +9,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Leo Kamino 2025. All rights
           reserved.
         </p>
-        <div className="flex space-x-6 mt-4 md:mt-0">
-          <a
-            href="https://github.com/LeonardoKamino"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-900 dark:text-zinc-400 hover:text-white dark:hover:text-zinc-700 transition"
-          >
-            <Github size={32} />
-          </a>
-          <a
-            href="https://linkedin.com/in/LeoKAmino"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-900 dark:text-zinc-400 hover:text-white dark:hover:text-zinc-700 transition"
-          >
-            <Linkedin size={32} />
-          </a>
-          <a
-            href="mailto:leo.kamino@gmail.com"
-            className="text-gray-900 dark:text-zinc-400 hover:text-white dark:hover:text-zinc-700 transition"
-          >
-            <Mail size={32} />
-          </a>
-        </div>
+        <SocialIconRow />
         {/* Download Button */}
         <a href="/resume.pdf" download="LeoKamino_Resume.pdf">
           <Button className="text-lg text-grey dark:bg-zinc-600 hover:bg-zinc-700 dark:hover:bg-zinc-800">

@@ -7,10 +7,9 @@ const ExperienceTimeline: React.FC = () => {
   return (
     <div className="mx-auto ">
       <h2 className="text-3xl font-bold  mb-8 text-center">Experience</h2>
-      <div className="relative w-full md:w-[85%] mx-auto">
+      <div className="relative w-full md:w-[80%] mx-auto">
         {/* Vertical Line */}
         <div className="hidden md:block absolute left-5 top-0 w-[2px] h-full bg-gray-300"></div>
-
         {experiences.map((exp, index) => (
           <div key={index} className="relative flex items-start mb-8">
             {/* Experience Card */}

@@ -21,11 +21,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <>
-      <div className="hidden md:flex relative z-10 items-center justify-center ml-[3px] w-10 h-10 bg-blue-900 text-white rounded-full mt-6">
+      <div className="hidden md:flex relative z-10 items-center justify-center ml-[3px] w-10 h-10 bg-zinc-700 text-white rounded-full mt-6">
         <Calendar className="w-5 h-5" />
       </div>
       <div className="md:ml-8 w-full mx-[10px] ">
-        <Card className="dark:bg-[#0D1B2A] dark:text-white py-6 px-3 md:p-6 rounded-2xl shadow-lg">
+        <Card className="dark:bg-zinc-800 dark:text-white py-6 px-3 md:p-6 rounded-2xl shadow-lg">
           <div className="flex flex-col md:flex-row">
             <div className="flex flex-1 mb-4">
               <div className="w-16 h-16 flex items-center justify-center">
