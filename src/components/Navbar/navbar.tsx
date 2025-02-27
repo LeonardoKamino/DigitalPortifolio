@@ -28,11 +28,6 @@ const Navbar: React.FC = () => {
             Projects
           </Link>
         </li>
-        <li>
-          <Link href="/contact" className={navItemClass}>
-            Contact
-          </Link>
-        </li>
       </ul>
 
       {/* Mobile Toggle Button */}
@@ -65,15 +60,6 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className={navItemClass}
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
               </Link>
             </li>
           </ul>
