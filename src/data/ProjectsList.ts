@@ -33,6 +33,74 @@ const ProjectsList = [
     videoDemoLink: "",
   },
   {
+    id: "distributed-key-value-store",
+    spotlight: true,
+    title: "Distributed Key-Value Store",
+    image: "/media/projects/DistributedKVStore.png",
+    summary:
+      "Scalable distributed key-value store with consistent hashing and fault tolerance",
+    description:
+      "Designed and implemented a scalable distributed key-value store using consistent hashing for efficient load balancing and fault tolerance. Developed a group membership service using an epidemic protocol to manage node failures and maintain a dynamic cluster. Deployed the system on AWS EC2, leveraging network emulation to test robustness under high latency and packet loss.",
+    skills: ["Java", "Distributed Systems", "JUnit", "AWS EC2"],
+    bulletPoints: [
+      "Implemented consistent hashing for efficient load balancing",
+      "Developed a group membership service using an epidemic protocol",
+      "Deployed system on AWS EC2 and tested under network constraints",
+    ],
+    deploymentLink: "",
+    githubLink: "",
+    reportLink: "",
+    date: "Jan 2024 - Apr 2024",
+    status: "Completed",
+    videoDemoLink: "",
+  },
+  {
+    id: "emergency-ai-response-system",
+    spotlight: true,
+    title: "Emergency AI Response System",
+    image: "/media/projects/EmergencyAIResponse.png",
+    summary:
+      "AI-driven system to classify the priority of 911 calls for improved emergency response efficiency",
+    description:
+      "Capstone project in collaboration with TELUS. Designed a real-time AI-driven system to classify the priority of 911 calls to improve emergency response efficiency. Developed speech diarization with Whisper transcription and LLM-based speaker ID to isolate caller audio for ML training. Created a Docker container to deploy AI-powered microservices in specialized hardware. Implemented live audio recording and real-time transmission to a FastAPI backend using WebSockets, enabling seamless real-time processing of 911 calls for priority classification.",
+    skills: ["FastAPI", "Python", "React", "Next.js", "Docker", "MongoDB"],
+    bulletPoints: [
+      "Developed speech diarization and Whisper transcription for audio analysis",
+      "Created LLM-based speaker identification for accurate caller recognition",
+      "Implemented real-time audio transmission with WebSockets",
+      "Deployed AI-powered microservices using Docker containers",
+    ],
+    deploymentLink: "",
+    githubLink: "",
+    reportLink: "",
+    date: "Sep 2024 - Dec 2024",
+    status: "Completed",
+    videoDemoLink: "",
+  },
+  {
+    id: "enhanced-udp-file-transfer",
+    spotlight: false,
+    title: "Enhanced UDP File Transfer Implementation",
+    image: "/media/projects/UDPFileTransfer.png",
+    summary:
+      "Reliable data transmission protocol over UDP with ACK, retransmissions, and sequence numbering",
+    description:
+      "Designed and implemented a reliable data transmission protocol over UDP using packet acknowledgment (ACK), retransmissions, and sequence numbering in C. Developed timeout and retransmission mechanisms, achieving 83.32% bandwidth utilization and improving network reliability. Implemented packet sequence numbering to ensure ordered data delivery and prevent data corruption. Optimized bandwidth utilization and throughput efficiency, reaching 17.47 Mb/s throughput on a 20 Mbit/s link, surpassing the 70% bandwidth requirement.",
+    skills: ["C", "Socket Programming", "Network Protocol Design"],
+    bulletPoints: [
+      "Implemented a reliable data transmission protocol over UDP",
+      "Developed timeout and retransmission mechanisms for network reliability",
+      "Achieved 83.32% bandwidth utilization, surpassing performance benchmarks",
+      "Implemented packet sequence numbering to ensure ordered data delivery",
+    ],
+    deploymentLink: "",
+    githubLink: "",
+    reportLink: "",
+    date: "Sep 2023 - Dec 2023",
+    status: "Completed",
+    videoDemoLink: "",
+  },
+  {
     id: "ecommerce-ui-testing",
     spotlight: false,
     title: "UI Testing for E-Commerce Platform",
@@ -62,7 +130,7 @@ const ProjectsList = [
   },
   {
     id: "chat-ai-moderation",
-    spotlight: true,
+    spotlight: false,
     title: "Chat Application with AI Moderation",
     image: "/media/projects/ChatAIModeration.png",
     summary:
@@ -94,7 +162,7 @@ const ProjectsList = [
   },
   {
     id: "vaccination-status-checker",
-    spotlight: true,
+    spotlight: false,
     title: "Vaccination Status Checker",
     image: "/media/projects/AutomaticVaccination.png",
     summary:
