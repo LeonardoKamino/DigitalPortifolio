@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && handleCardClick()}
       >
-        <CardHeader className="bg-[#212933] flex items-center p-3">
+        <CardHeader className="dark:bg-[#212933] flex items-center p-3">
           <div className="flex items-center space-x-2">
             <Circle className="text-red-500 w-4 h-4" />
             <CircleDot className="text-yellow-500 w-4 h-4" />
