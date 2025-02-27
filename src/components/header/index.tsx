@@ -61,11 +61,11 @@ const Header: React.FunctionComponent = () => {
           <h1 className="mb-12 text-5xl md:text-7xl xlg:text-8xl">
             Hey, I&apos;m Leo
           </h1>
-          <div className="mb-12 text-xl md:text-2xl xlg:text-3xl">
-            <p className="mb-2">
-              Computer Engineering student @ UBC, Vancouver.
+          <div className="mb-12 ">
+            <p className="mb-2 text-xl md:text-3xl ">Software Engineer</p>
+            <p className="text-lg md:text-xl xlg:text-2xl">
+              Computer Engineering @ UBC
             </p>
-            <p>Looking for new grad opportunities for May 2025.</p>
           </div>
 
           {/* Download Button */}
