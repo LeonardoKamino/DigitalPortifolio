@@ -31,7 +31,7 @@ const Header: React.FunctionComponent = () => {
         shootingStar.style.left = `${Math.random() * 100}%`;
         shootingStar.style.width = `${Math.random() * 5}px`;
         shootingStar.style.height = shootingStar.style.width;
-        shootingStar.style.animationDuration = `${Math.random() * 7000 + 1000}ms`; // Random duration
+        shootingStar.style.animationDuration = `${Math.random() * 3000 + 1000}ms`; // Random duration
 
         // Generate a random angle between 0 and 360 degrees
         const angle = Math.random() * 360;
@@ -46,7 +46,7 @@ const Header: React.FunctionComponent = () => {
       };
 
       // Create shooting stars at random intervals
-      const shootingStarInterval = setInterval(createShootingStar, 500);
+      const shootingStarInterval = setInterval(createShootingStar, 1000);
 
       // Cleanup interval on component unmount
       return () => clearInterval(shootingStarInterval);
