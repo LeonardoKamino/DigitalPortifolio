@@ -42,15 +42,15 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 dark:bg-zinc-900 md:hidden">
+        <div className="absolute top-16 left-0 right-0 dark:bg-zinc-900 md:hidden z-10">
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li>
               <Link
-                href="/about"
+                href="/"
                 className={navItemClass}
                 onClick={() => setIsOpen(false)}
               >
-                About
+                Home
               </Link>
             </li>
             <li>
