@@ -21,7 +21,7 @@ const SocialIconRow: React.FC = () => {
         <Linkedin size={32} />
       </a>
       <a
-        href="mailto:leo.kamino@gmail.com"
+        href="mailto:leonardo.kaminobarros@gmail.com"
         className="text-gray-900 dark:text-zinc-400 hover:text-gray-100 dark:hover:text-zinc-700 transition"
       >
         <Mail size={32} />

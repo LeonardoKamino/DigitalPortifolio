@@ -129,6 +129,54 @@ const ProjectsList = [
     videoDemoLink: "",
   },
   {
+    id: "secure-one-way-vpn",
+    spotlight: false,
+    title: "Secure One-Way VPN Implementation",
+    image: "/media/projects/SecureVPN.png",
+    summary:
+      "Cybersecurity - Designed a secure VPN system for one-way encrypted communication",
+    description:
+      "Developed a secure VPN system to enable one-way encrypted communication between client and server, mitigating security threats such as Man-in-the-Middle (MitM), replay, and integrity attacks. Designed an OTR-inspired ratcheting system leveraging Diffie-Hellman key exchange, RSA, and ECC for mutual authentication and forward secrecy. Implemented encryption and key management mechanisms using AES and PyCryptodome to ensure data confidentiality and integrity.",
+    skills: ["Python", "PyCryptodome", "ECC", "RSA", "AES", "OTR Ratchet"],
+    bulletPoints: [
+      "Designed a secure VPN system to prevent MitM, replay, and integrity attacks",
+      "Implemented an OTR-inspired ratcheting system for forward secrecy",
+      "Utilized Diffie-Hellman, RSA, and ECC for mutual authentication",
+      "Developed encryption and key management using AES and PyCryptodome",
+    ],
+    deploymentLink: "",
+    githubLink: "",
+    reportLink: "",
+    date: "2024",
+    status: "Completed",
+    videoDemoLink: "",
+  },
+  {
+    id: "vaccination-status-checker",
+    spotlight: false,
+    title: "Vaccination Status Checker",
+    image: "/media/projects/AutomaticVaccination.png",
+    summary:
+      "Autonomous system to verify COVID-19 vaccination status for access control",
+    description:
+      "This project was developed during the CPEN 291 course. It consists of an autonomous system to allow or deny access into establishments based on COVID-19 vaccination status, self-assessment, and temperature, including an admin portal for data visualization and notifications in case of virus exposure. I led the project architecture and integration between components and developed APIs to connect views with Arduino components via Node.js and Johnny-Five, alongside front-end views in React.",
+    skills: [
+      "Project Management",
+      "Node.js",
+      "React",
+      "Johnny-Five",
+      "Arduino",
+      "Git",
+    ],
+    bulletPoints: ["API Development", "Front-End Views", "Mass Email System"],
+    deploymentLink: "",
+    githubLink: "",
+    reportLink: "http://jakerubin.ca/projects/covidapp.html",
+    date: "Jan 2022 - Apr 2022",
+    status: "Completed",
+    videoDemoLink: "",
+  },
+  {
     id: "chat-ai-moderation",
     spotlight: false,
     title: "Chat Application with AI Moderation",
@@ -160,32 +208,6 @@ const ProjectsList = [
     status: "Completed",
     videoDemoLink: "",
   },
-  {
-    id: "vaccination-status-checker",
-    spotlight: false,
-    title: "Vaccination Status Checker",
-    image: "/media/projects/AutomaticVaccination.png",
-    summary:
-      "Autonomous system to verify COVID-19 vaccination status for access control",
-    description:
-      "This project was developed during the CPEN 291 course. It consists of an autonomous system to allow or deny access into establishments based on COVID-19 vaccination status, self-assessment, and temperature, including an admin portal for data visualization and notifications in case of virus exposure. I led the project architecture and integration between components and developed APIs to connect views with Arduino components via Node.js and Johnny-Five, alongside front-end views in React.",
-    skills: [
-      "Project Management",
-      "Node.js",
-      "React",
-      "Johnny-Five",
-      "Arduino",
-      "Git",
-    ],
-    bulletPoints: ["API Development", "Front-End Views", "Mass Email System"],
-    deploymentLink: "",
-    githubLink: "",
-    reportLink: "http://jakerubin.ca/projects/covidapp.html",
-    date: "Jan 2022 - Apr 2022",
-    status: "Completed",
-    videoDemoLink: "",
-  },
-
   {
     id: "hireflow",
     spotlight: false,

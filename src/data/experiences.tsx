@@ -16,7 +16,7 @@ const experiences = [
       </ul>
     ),
     skills: ["Communication", "Proactive", "Problem Solving"],
-    logo: "/media/LoadingGear.gif",
+    logo: "/media/logos/LoadingGear.gif",
   },
   {
     company: "Motorola Solutions - Avigilon",
@@ -43,7 +43,7 @@ const experiences = [
       </ul>
     ),
     skills: ["Ruby on Rails", "React", "Selenium", "Rspec", "Bamboo"],
-    logo: "/media/Motorola.jpg",
+    logo: "/media/logos/Motorola.jpg",
   },
   {
     company: "UBC Applied Science Dean's Office",
@@ -75,7 +75,7 @@ const experiences = [
       </ul>
     ),
     skills: ["PHP", "HTML5", "CSS", "TailwindCSS", "Drupal", "SEO"],
-    logo: "/media/UBCEngineeringLogo.png",
+    logo: "/media/logos/UBCEngineeringLogo.png",
   },
   {
     company: "UBC Computer Engineering Department",
@@ -98,7 +98,7 @@ const experiences = [
       </ul>
     ),
     skills: ["Java", "Mentorship", "Teaching", "Software Construction"],
-    logo: "/media/ECE.png",
+    logo: "/media/logos/ECE.png",
   },
   {
     company: "Change Healthcare (Optum)",
@@ -118,7 +118,7 @@ const experiences = [
       </ul>
     ),
     skills: ["Angular", ".NET", "Python", "Releases Testing"],
-    logo: "/media/ChangeHealthcareLogo.jpg",
+    logo: "/media/logos/ChangeHealthcareLogo.jpg",
   },
   {
     company: "UBC Launch Pad (Student Design Team)",
@@ -140,7 +140,7 @@ const experiences = [
       </ul>
     ),
     skills: ["TypeScript", "React", "Bulma"],
-    logo: "/media/LaunchpadLogo.png",
+    logo: "/media/logos/LaunchpadLogo.png",
   },
 ];
 
