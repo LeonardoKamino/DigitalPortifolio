@@ -1,9 +1,9 @@
 "use client";
 
 import SideBar from "./sidebar";
-import { FileAudio, HomeIcon } from "lucide-react";
 import Navbar from "../navbar";
 import { useState } from "react";
+import { navigationLinks } from "@/config/navigation";
 
 export default function DashboardLayout({
   children,
@@ -12,20 +12,15 @@ export default function DashboardLayout({
 }>) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const links = [
-    { title: "Home", href: "/", icon: HomeIcon },
-    { title: "Projects", href: "/projects", icon: FileAudio },
-  ];
-
   return (
     <div className="flex flex-col md:flex-row min-h-screen w-full">
       {/* Sidebar */}
       <div className="hidden md:block md:fixed left-0 top-0 h-full transition-all duration-300">
         <SideBar
-          links={links}
+          links={navigationLinks}
           className="h-full"
           isOpen={isSidebarOpen}
-          setIsOpen={setIsSidebarOpen} // Pass the state controller to the sidebar
+          setIsOpen={setIsSidebarOpen}
         />
       </div>
 

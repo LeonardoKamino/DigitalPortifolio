@@ -1,13 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import "../../styles/header.scss";
 import SocialIconRow from "../social-icon-row";
 
 const Header: React.FunctionComponent = () => {
-  // Path to your resume PDF file
-  const resumePdfPath = "/resume.pdf"; // Update this path
-
   // Function to create stars and shooting stars
   useEffect(() => {
     const header = document.querySelector(".header");
@@ -69,12 +65,6 @@ const Header: React.FunctionComponent = () => {
             </p>
           </div>
           <SocialIconRow />
-          {/* Download Button */}
-          <a href={resumePdfPath} download="LeoKamino_Resume.pdf">
-            <Button className="link-button my-6 md:text-xl">
-              Download my Resume
-            </Button>
-          </a>
         </div>
       </header>
     </div>

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import SocialIconRow from "../social-icon-row";
 
 export default function Footer() {
@@ -9,12 +8,6 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Leo Kamino. All rights reserved.
         </p>
         <SocialIconRow />
-        {/* Download Button */}
-        <a href="/resume.pdf" download="LeoKamino_Resume.pdf">
-          <Button className="text-lg text-grey dark:bg-zinc-600 hover:bg-zinc-700 dark:hover:bg-zinc-800">
-            Download Resume
-          </Button>
-        </a>
       </div>
     </footer>
   );
