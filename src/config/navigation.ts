@@ -1,4 +1,4 @@
-import { HomeIcon, FileAudio, User } from "lucide-react";
+import { HomeIcon, Rocket, User } from "lucide-react";
 
 export const navigationLinks = [
   {
@@ -9,7 +9,7 @@ export const navigationLinks = [
   {
     title: "Projects",
     href: "/projects",
-    icon: FileAudio,
+    icon: Rocket,
   },
   {
     title: "About Me",

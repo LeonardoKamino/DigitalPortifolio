@@ -6,6 +6,14 @@ import { Code2, Server, Wrench, Blocks } from "lucide-react";
 import SocialIconRow from "@/components/social-icon-row";
 import ExperienceTimeline from "@/components/experience-timeline/experience-timeline";
 import Footer from "@/components/footer/footer";
+import { siteConfig } from "../metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description:
+    "Learn about my experience as a software engineer, my technical skills, and professional background.",
+};
 
 export default function AboutMe() {
   const skills = [
@@ -60,49 +68,69 @@ export default function AboutMe() {
     },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Leonardo Kamino",
+    jobTitle: "Software Engineer",
+    description: siteConfig.description,
+    url: `${siteConfig.url}/aboutme`,
+    sameAs: [
+      "https://github.com/LeonardoKamino",
+      "https://linkedin.com/in/LeoKAmino",
+    ],
+    knowsAbout: skills.flatMap((group) =>
+      group.items.map((skill) => skill.name),
+    ),
+  };
+
   return (
     <>
       <Navbar />
-      <div className="container mx-auto py-12 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <main className="container mx-auto py-12 px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Image Section */}
-          <div className="flex flex-col items-center space-y-6">
+          <header className="flex flex-col items-center space-y-6">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary">
               <Image
                 src="/media/profile.jpg"
-                alt="Profile picture"
+                alt="Leonardo Kamino - Software Engineer"
                 fill
                 className="object-cover"
                 priority
               />
             </div>
             {/* Social Links */}
-            <div className="flex gap-4">
+            <nav className="flex gap-4">
               <SocialIconRow />
-            </div>
-          </div>
+            </nav>
+          </header>
 
           {/* Description Section */}
-          <div className="space-y-6">
+          <section className="space-y-6">
             <h1 className="text-4xl font-bold">About Me</h1>
-            <p className="text-lg ">
+            <p className="text-lg text-muted-foreground">
               Software engineer with experience in full-stack development,
               software testing, and software automation. Skilled in building
               scalable applications using JavaScript/Typescript, Python, Ruby,
               and Java, with a strong understanding of API development,
               databases, and cloud technologies.
             </p>
-            <p className="text-lg">
+            <p className="text-lg text-muted-foreground">
               Adept at translating user requirements into technical
               implementations. Experienced in Agile development, CI/CD
               integration, test-driven development, and automated testing to
               ensure high-quality software solutions.
             </p>
-          </div>
-        </div>
+          </section>
+        </article>
 
         {/* Skills Section */}
-        <div className="mt-16">
+        <section className="mt-16">
           <h2 className="text-3xl font-bold mb-8">Skills & Technologies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {skills.map((skillGroup) => (
@@ -124,8 +152,8 @@ export default function AboutMe() {
                         <Image
                           src={skill.iconPath}
                           alt={`${skill.name} icon`}
-                          width={20}
-                          height={20}
+                          width={25}
+                          height={25}
                           className="dark:invert"
                         />
                         {skill.name}
@@ -136,11 +164,11 @@ export default function AboutMe() {
               </Card>
             ))}
           </div>
-        </div>
+        </section>
         <div className="mt-16">
           <ExperienceTimeline />
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );
