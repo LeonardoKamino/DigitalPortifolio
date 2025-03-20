@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: "Leonardo Kamino - Software Engineer",
+  title: "Leo Kamino - Software Engineer",
   description:
     " Software engineer with experience in full-stack development, software testing, and software automation. Skilled in building scalable applications using JavaScript/Typescript, Python, Ruby, and Java, with a strong understanding of API development, databases, and cloud technologies.",
   author: "Leonardo Kamino",

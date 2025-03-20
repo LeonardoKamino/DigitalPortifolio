@@ -35,7 +35,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   };
 
   return (
-    <div className="w-full lg:w-1/3 p-4">
+    <div className="w-full md:w-1/2 xl:w-1/3 p-4">
       <Card
         className="bg-zinc-200 dark:bg-zinc-700 shadow-lg cursor-pointer hover:shadow-xl transition-all h-full"
         onClick={handleCardClick}

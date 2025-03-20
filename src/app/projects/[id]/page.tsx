@@ -22,11 +22,11 @@ export default async function ProjectDetailPage({
   }
 
   return (
-    <div className="relative w-full mx-auto p-4 md:p-6">
+    <div className="relative mx-auto p-4 md:p-6">
       <Link href="/projects" className="block">
         <ArrowLeft className="cursor-pointer" size={24} />
       </Link>
-      <div className="max-w-4xl mt-3 ">
+      <div className="  lg:max-w-4xl m-auto mt-3 ">
         <Card className="shadow-lg p-2 md:p-6 rounded-2xl">
           <Image
             src={project.image}

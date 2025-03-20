@@ -78,13 +78,13 @@
 
 // Light theme
 .light .header {
-  background: linear-gradient(-45deg, #ddd, #fff, #ddd);
+  background: linear-gradient(-45deg, #f6f3e2, #fff, #f6f3e2);
 
   .star {
-    background: #333; // Darker stars for light theme
+    display: none;
   }
 
   .shooting-star {
-    background: #333;
+    background: black;
   }
 }

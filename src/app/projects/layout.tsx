@@ -7,7 +7,7 @@ export default function ProjectsLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className=" w-full ">
+    <div>
       {/* Sidebar */}
 
       <DashboardLayout>

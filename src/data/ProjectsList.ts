@@ -58,7 +58,7 @@ const ProjectsList = [
     id: "emergency-ai-response-system",
     spotlight: true,
     title: "Emergency AI Response System",
-    image: "/media/projects/EmergencyAIResponse.png",
+    image: "/media/projects/EmergencyAIResponse.jpg",
     summary:
       "AI-driven system to classify the priority of 911 calls for improved emergency response efficiency",
     description:

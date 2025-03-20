@@ -15,7 +15,7 @@ const experiences = [
         </li>
       </ul>
     ),
-    skills: ["Communication", "Proactive", "Problem Solving"],
+    skills: ["Software Engineering", "Devops", "Software Automation"],
     logo: "/media/logos/LoadingGear.gif",
   },
   {
@@ -26,23 +26,32 @@ const experiences = [
       <ul>
         <li>
           Designed and debugged scalable features using Ruby on Rails (MVC) and
-          React.
+          React, enhancing the functionality of enterprise-grade applications.
         </li>
         <li>
           Developed an automated Selenium web scraper for broken link detection
-          and HTML issue reporting via Atlassian Bamboo CI.
+          and HTML issue reporting, integrated seamlessly with Atlassian Bamboo
+          CI.
         </li>
         <li>
-          Built RSpec and React Testing Library suites to improve code
-          reliability.
+          Built comprehensive RSpec and React Testing Library suites, boosting
+          code reliability and maintainability.
         </li>
         <li>
-          Performed end-to-end, functional, and exploratory testing, addressing
-          critical bugs for high-quality releases.
+          Conducted end-to-end, functional, and exploratory testing, resolving
+          critical bugs to ensure high-quality software releases.
         </li>
       </ul>
     ),
-    skills: ["Ruby on Rails", "React", "Selenium", "Rspec", "Bamboo"],
+    skills: [
+      "Ruby on Rails",
+      "React",
+      "Selenium",
+      "Python",
+      "Rspec",
+      "Jest",
+      "CI/CD",
+    ],
     logo: "/media/logos/Motorola.jpg",
   },
   {
@@ -52,8 +61,8 @@ const experiences = [
     description: (
       <ul>
         <li>
-          Led maintenance and optimization of UBC Applied Science websites, with
-          6,000+ weekly visitors ensuring seamless performance.
+          Led maintenance and optimization of UBC Applied Science websites,
+          ensuring seamless performance and usability.
         </li>
         <li>
           Built custom Drupal modules in PHP to implement site-specific
@@ -61,20 +70,32 @@ const experiences = [
         </li>
         <li>
           Created a scalable Sass-based design system to ensure consistent and
-          modern UI/UX.
+          modern UI/UX across all UBC Engineering websites.
         </li>
-        <li>Developed dynamic UI components using Twig and JavaScript.</li>
+        <li>
+          Developed dynamic UI components using Twig, JavaScript, and
+          TailwindCSS.
+        </li>
         <li>
           Delivered custom websites for research groups and engineering teams,
           aligning with stakeholder requirements.
         </li>
         <li>
-          Improved SEO scores by 20%, from 74% to 95+, through strategic
+          Improved SEO scores by 20%, from 75% to 95+, through strategic
           optimizations.
         </li>
       </ul>
     ),
-    skills: ["PHP", "HTML5", "CSS", "TailwindCSS", "Drupal", "SEO"],
+    skills: [
+      "PHP",
+      "Javascript",
+      "HTML5",
+      "CSS",
+      "TailwindCSS",
+      "Sass",
+      "Drupal",
+      "SEO",
+    ],
     logo: "/media/logos/UBCEngineeringLogo.png",
   },
   {
@@ -97,7 +118,12 @@ const experiences = [
         </li>
       </ul>
     ),
-    skills: ["Java", "Mentorship", "Teaching", "Software Construction"],
+    skills: [
+      "Java",
+      "Objected Oriented Programming",
+      "Teaching",
+      "Software Construction",
+    ],
     logo: "/media/logos/ECE.png",
   },
   {
@@ -107,17 +133,17 @@ const experiences = [
     description: (
       <ul>
         <li>
-          Enhanced an internal web tool using Angular and .NET, semi-automating
+          Enhanced an internal web tool using Angular and .NET, automating the
           packaging of new update releases to streamline the creation and
           availability of medical device software patches.
         </li>
         <li>
-          Performed rigorous sanity testing on medical device software patches,
-          ensuring compliance with strict quality standards.
+          Conducted rigorous sanity testing on medical device software patches,
+          ensuring compliance with strict quality and regulatory standards.
         </li>
       </ul>
     ),
-    skills: ["Angular", ".NET", "Python", "Releases Testing"],
+    skills: ["Angular", ".NET", "Python", "Verification"],
     logo: "/media/logos/ChangeHealthcareLogo.jpg",
   },
   {
